@@ -1,0 +1,10 @@
+<section>
+	<input type="text" ng-model="novaPalestra.nome">
+	<input type="text" ng-model="novaPalestra.palestrante">
+	<input type="button" value="Incluir" ng-click="incluir()">
+	<br/>
+	<input type="text" ng-model="filterPalestra">
+	<ul>
+		<li ng-repeat="palestra in palestras | filter:filterPalestra | orderBy:nome">{{ palestra.nome }} - {{ palestra.palestrante }}</li>
+	</ul>
+</section>

@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en" ng-app="">
+<head>
+	<meta charset="UTF-8">
+	<title>Ex02 - Diretivas e data binding</title>
+</head>
+<body ng-init="palestras=[{ palestrante: 'Teste', nome: 'Teste' }, { palestrante: 'YOLO', nome: 'W00T' }]">
+	<ul>
+		<li ng-repeat="palestra in palestras">{{ palestra.nome }} - {{ palestra.palestrante }}</li>
+	</ul>
+	<script src="../scripts/angular.min.js"></script>
+</body>
+</html>
